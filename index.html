@@ -1,68 +1,120 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background: #fff; color: #111; line-height: 1.6; }
-    header { padding: 2rem; background: #f8f8f8; text-align: center; }
-    header h1 { font-size: 2.5rem; font-weight: 800; }
-    header p { margin-top: 0.5rem; font-weight: 400; color: #666; }
-    section { padding: 4rem 2rem; max-width: 900px; margin: auto; }
-    .project { margin-bottom: 3rem; }
-    .project h3 { font-size: 1.5rem; font-weight: 600; }
-    .project p { margin-top: 0.5rem; }
-    footer { text-align: center; padding: 2rem; color: #aaa; font-size: 0.875rem; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - Portfolio</title> <!-- EDIT THIS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Consider adding a Google Font link here if you want a specific font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header data-aos="fade-down">
-    <h1>Your Name</h1>
-    <p>Unity Developer & Product Designer</p>
-  </header>
 
-  <section data-aos="fade-up">
-    <h2>About Me</h2>
-    <p style="margin-top: 1rem;">
-      I'm a Unity developer and designer passionate about building immersive, interactive experiences and beautiful, user-focused products.
-    </p>
-  </section>
+    <div class="container">
 
-  <section data-aos="fade-up">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project Title 1</h3>
-      <p>Short description of your project, what tools you used, what problem it solves, etc.</p>
-    </div>
-    <div class="project">
-      <h3>Project Title 2</h3>
-      <p>Description of another project with emphasis on your role and skills applied.</p>
-    </div>
-  </section>
+        <header id="hero">
+            <h1>[Your Name]</h1>          <!-- EDIT THIS -->
+            <h2>[Your Title / Role]</h2> <!-- EDIT THIS -->
+            <p class="tagline">[A short, catchy tagline about what you do]</p> <!-- EDIT THIS -->
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-  <section data-aos="fade-up">
-    <h2>Contact</h2>
-    <p style="margin-top: 1rem;">
-      Reach me at <a href="mailto:your@email.com">your@email.com</a> or find me on <a href="#">LinkedIn</a>.
-    </p>
-  </section>
+        <main>
+            <section id="about">
+                <h3>// About Me</h3>
+                <p>
+                    [Write a paragraph or two about yourself. What are you passionate about? What are your key skills or areas of focus? Keep it concise and engaging.] <!-- EDIT THIS -->
+                </p>
+                <p>
+                    [Maybe another paragraph about your background or goals.] <!-- EDIT THIS -->
+                </p>
+            </section>
 
-  <footer>
-    © 2025 Your Name. All rights reserved.
-  </footer>
+            <section id="experience">
+                <h3>// Experience</h3>
+                <div class="job">
+                    <h4>[Job Title] @ [Company Name]</h4> <!-- EDIT THIS -->
+                    <p class="date">[Month Year] - [Month Year or Present]</p> <!-- EDIT THIS -->
+                    <ul>
+                        <li>[Responsibility or accomplishment 1]</li> <!-- EDIT THIS -->
+                        <li>[Responsibility or accomplishment 2]</li> <!-- EDIT THIS -->
+                        <li>[Responsibility or accomplishment 3]</li> <!-- EDIT THIS -->
+                    </ul>
+                </div>
+                <div class="job">
+                    <h4>[Previous Job Title] @ [Previous Company Name]</h4> <!-- EDIT THIS -->
+                    <p class="date">[Month Year] - [Month Year]</p> <!-- EDIT THIS -->
+                    <ul>
+                        <li>[Responsibility or accomplishment 1]</li> <!-- EDIT THIS -->
+                        <li>[Responsibility or accomplishment 2]</li> <!-- EDIT THIS -->
+                    </ul>
+                </div>
+                <!-- Add more job entries as needed -->
+            </section>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true
-    });
-  </script>
+            <section id="projects">
+                <h3>// Projects</h3>
+                <div class="project">
+                    <h4>[Project Title 1]</h4> <!-- EDIT THIS -->
+                    <p>[Brief description of the project. What problem does it solve? What technologies did you use?]</p> <!-- EDIT THIS -->
+                    <p>
+                        <a href="[Link to Project Demo/Live Site]" target="_blank" rel="noopener noreferrer">Live Demo</a> |
+                        <a href="[Link to Project Code Repository (e.g., GitHub)]" target="_blank" rel="noopener noreferrer">Code</a>
+                         <!-- EDIT THESE LINKS -->
+                    </p>
+                </div>
+                 <div class="project">
+                    <h4>[Project Title 2]</h4> <!-- EDIT THIS -->
+                    <p>[Brief description of the project.]</p> <!-- EDIT THIS -->
+                    <p>
+                        <a href="[Link to Project Demo/Live Site]" target="_blank" rel="noopener noreferrer">Live Demo</a> |
+                        <a href="[Link to Project Code Repository]" target="_blank" rel="noopener noreferrer">Code</a>
+                         <!-- EDIT THESE LINKS -->
+                    </p>
+                </div>
+                <!-- Add more project entries as needed -->
+            </section>
+
+            <section id="contact">
+                <h3>// Get In Touch</h3>
+                <p>
+                    [You can write a short sentence here, e.g., "Interested in collaborating or have a question?"] <!-- EDIT THIS -->
+                </p>
+                 <ul class="social-links">
+                    <li><a href="mailto:[your.email@example.com]">Email</a></li> <!-- EDIT THIS -->
+                    <li><a href="[Your LinkedIn URL]" target="_blank" rel="noopener noreferrer">LinkedIn</a></li> <!-- EDIT THIS -->
+                    <li><a href="https://github.com/[your-github-username]" target="_blank" rel="noopener noreferrer">GitHub</a></li> <!-- EDIT THIS -->
+                    <!-- Add other relevant links (Twitter, etc.) -->
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; [Year] [Your Name]. Inspired by itsjosie.com.</p> <!-- EDIT THIS -->
+        </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Optional: Basic JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
