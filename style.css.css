@@ -1,0 +1,211 @@
+/* --- Variables (Easy Customization) --- */
+:root {
+    --bg-color: #1a1a1a; /* Dark background */
+    --text-color: #e0e0e0; /* Light grey text */
+    --primary-color: #bb86fc; /* Accent color (like Josie's purple) - Adjust as needed */
+    --secondary-color: #03dac6; /* Another accent (optional) */
+    --link-hover-color: #ffffff; /* White or brighter accent on hover */
+    --container-width: 800px; /* Max width of content */
+    --font-main: 'Work Sans', sans-serif; /* Main text font */
+    --font-mono: 'Space Mono', monospace; /* Font for headings/accents (like Josie's) */
+}
+
+/* --- Basic Reset & Body --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    line-height: 1.7;
+    padding: 20px;
+}
+
+/* --- Container --- */
+.container {
+    max-width: var(--container-width);
+    margin: 40px auto; /* Add some space top/bottom */
+    padding: 0 20px; /* Padding inside container */
+}
+
+/* --- Typography & Links --- */
+h1, h2, h3, h4 {
+    font-family: var(--font-mono);
+    color: var(--primary-color);
+    margin-bottom: 0.8em;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-family: var(--font-main);
+    font-weight: 300; /* Lighter weight */
+    margin-bottom: 0.5em;
+}
+
+h3 { /* Section headings */
+    font-size: 1.6rem;
+    margin-top: 2.5em; /* Space between sections */
+    margin-bottom: 1.2em;
+    border-bottom: 1px solid var(--primary-color); /* Subtle line */
+    padding-bottom: 0.3em;
+    display: inline-block; /* Make border only as wide as text */
+}
+
+h4 { /* Job/Project titles */
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 0.1em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+/* --- Header / Hero Section --- */
+header#hero {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+header#hero .tagline {
+    font-size: 1.1rem;
+    color: #b0b0b0; /* Slightly dimmer */
+    margin-bottom: 1.5em;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between nav items */
+}
+
+header nav a {
+    font-family: var(--font-mono);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+header nav a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+/* --- Sections --- */
+section {
+    margin-bottom: 3em;
+}
+
+/* --- Experience Section --- */
+#experience .job {
+    margin-bottom: 1.5em;
+    padding-left: 1em;
+    border-left: 2px solid var(--primary-color); /* Timeline effect */
+}
+
+#experience .job .date {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    font-family: var(--font-mono);
+    margin-bottom: 0.5em;
+}
+
+#experience .job ul {
+    list-style: disc; /* Add bullets back for job points */
+    padding-left: 20px;
+}
+
+#experience .job li {
+    margin-bottom: 0.4em;
+}
+
+/* --- Projects Section --- */
+#projects .project {
+    margin-bottom: 2em;
+}
+#projects .project h4 {
+     margin-bottom: 0.5em;
+}
+#projects .project a {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+/* --- Contact Section --- */
+#contact .social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    gap: 15px; /* Space between links */
+}
+
+#contact .social-links li a {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    /* Optional: Add icons later */
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    margin-top: 4em;
+    padding-top: 1em;
+    border-top: 1px solid #333; /* Faint separator line */
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* --- Responsiveness (Basic Example) --- */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+    .container {
+        margin-top: 20px;
+    }
+    header nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 10px;
+    }
+    #contact .social-links {
+        justify-content: center; /* Center links on mobile */
+    }
+}
